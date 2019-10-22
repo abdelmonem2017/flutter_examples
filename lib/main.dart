@@ -1,6 +1,5 @@
- 
-import 'package:flutter_examples/chat_app_design_example/screens/chats.dart';
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
+import 'package:flutter_examples/home.dart'; 
 
 void main() => runApp(MyApp());
 
@@ -13,10 +12,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.red,
         accentColor: Color(0xFFFEF9EB)
       ),
-      home: Chats(),
+      home: Home(),
     );
   }
 }
-
- 
- 

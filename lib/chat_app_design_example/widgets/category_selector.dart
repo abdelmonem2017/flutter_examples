@@ -12,7 +12,7 @@ class _CategorySelectorState extends State<CategorySelector> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 90.0,
+        height: 60.0,
         color: Theme.of(context).primaryColor,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
@@ -25,7 +25,7 @@ class _CategorySelectorState extends State<CategorySelector> {
                 });
               },
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Text(categories[index],
                     style: TextStyle(
                         color: selectedIndex == index ? Colors.white : Colors.white60,

@@ -11,6 +11,6 @@ class Message{
     this.time,
     this.text,
     this.isliked,
-    this.unread
+    this.unread,
   });
 }

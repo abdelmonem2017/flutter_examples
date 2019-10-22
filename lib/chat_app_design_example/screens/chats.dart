@@ -1,5 +1,7 @@
-import 'package:flutter_examples/chat_app_design_example/widgets/category_selector.dart'; 
 import 'package:flutter/material.dart';
+import 'package:flutter_examples/chat_app_design_example/widgets/recent_chats.dart';
+import 'package:flutter_examples/chat_app_design_example/widgets/category_selector.dart';
+import 'package:flutter_examples/chat_app_design_example/widgets/favorite_contacts.dart';
 
 class Chats extends StatelessWidget {
   @override
@@ -9,7 +11,9 @@ class Chats extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
         actions: <Widget>[
           IconButton(
@@ -22,18 +26,24 @@ class Chats extends StatelessWidget {
       body: Column(
         children: <Widget>[
           CategorySelector(),
-          
-          Expanded(child: Container(
-            decoration: BoxDecoration(
-              color: Theme.of(context).accentColor,borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(30.0),
-                topRight: Radius.circular(30.0)
-              )
-            ),
-            
-          ),)
+          Expanded(
+            child: Container(
+                decoration: BoxDecoration(
+                    color: Theme.of(context).accentColor,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30.0),
+                        topRight: Radius.circular(30.0))),
+                child: Column(
+                  children: <Widget>[
+                    FavoriteContacts(),
+                    RecentChats()
+                  ],
+                )),
+          )
         ],
       ),
     );
   }
 }
+
+ 
