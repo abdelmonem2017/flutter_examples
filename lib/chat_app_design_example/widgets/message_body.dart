@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_examples/chat_app_design_example/models/message.dart';
+import 'package:flutter_examples/style/theme.dart';
 
 class MessageBody extends StatefulWidget {
   Message chatMessage;
@@ -20,7 +21,7 @@ class _MessageBodyState extends State<MessageBody> {
         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 25),
         decoration: BoxDecoration(
             color:
-                widget.isMe ? Theme.of(context).accentColor : Color(0xFFFFEFEE),
+                widget.isMe ? chatTheme.accentColor : Color(0xFFFFEFEE),
             borderRadius: widget.isMe
                 ? BorderRadius.only(
                     topLeft: Radius.circular(15),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_examples/chat_app_design_example/screens/chats.dart';
+import 'package:flutter_examples/travel_app_desgin_example/screens/landing_screen.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -7,7 +8,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center, 
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(
               child: Text('Chat UI'),
@@ -19,20 +20,22 @@ class Home extends StatelessWidget {
               },
             ),
             RaisedButton(
-              child: Text('2 UI'),
-              onPressed: () { 
+              child: Text('TravelApp UI'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TravelApp()),
+                );
               },
             ),
             RaisedButton(
               child: Text('3 UI'),
-              onPressed: () { 
-              },
+              onPressed: () {},
             ),
             RaisedButton(
               child: Text('4 UI'),
-              onPressed: () { 
-              },
-            ),  
+              onPressed: () {},
+            ),
           ],
         ),
       ),

@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_examples/chat_app_design_example/widgets/recent_chats.dart';
 import 'package:flutter_examples/chat_app_design_example/widgets/category_selector.dart';
 import 'package:flutter_examples/chat_app_design_example/widgets/favorite_contacts.dart';
+import 'package:flutter_examples/style/theme.dart';
 
 class Chats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: chatTheme.primaryColor,
       appBar: AppBar(
+        backgroundColor: chatTheme.primaryColor,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -29,15 +31,12 @@ class Chats extends StatelessWidget {
           Expanded(
             child: Container(
                 decoration: BoxDecoration(
-                    color: Theme.of(context).accentColor,
+                    color: chatTheme.accentColor,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30.0),
                         topRight: Radius.circular(30.0))),
                 child: Column(
-                  children: <Widget>[
-                    FavoriteContacts(),
-                    RecentChats()
-                  ],
+                  children: <Widget>[FavoriteContacts(), RecentChats()],
                 )),
           )
         ],
@@ -45,5 +44,3 @@ class Chats extends StatelessWidget {
     );
   }
 }
-
- 

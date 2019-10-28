@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_examples/chat_app_design_example/sample_data/sample_data.dart';
 import 'package:flutter_examples/chat_app_design_example/widgets/message_body.dart';
+import 'package:flutter_examples/style/theme.dart';
 
 class Messages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: chatTheme.primaryColor,
       appBar: AppBar(
+        backgroundColor: chatTheme.primaryColor,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
