@@ -41,10 +41,10 @@ class RecentChats extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Container(
-                        width: 310,
                         padding: EdgeInsets.only(
                             top: 10, left: 20, bottom: 10, right: 10),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             CircleAvatar(
                               radius: 35,

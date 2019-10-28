@@ -47,7 +47,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
   - assets/images/chat_img/
-  - assets/images/travel_app_img/
+  - assets/images/travel_app_img/ 
+  - assets/images/booking_app_img/ 
+  - assets/images/netflex_app_img/
   # - assets/images/chat_img/
 
   # An image asset can refer to one or more resolution-specific "variants", see

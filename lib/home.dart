@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_examples/chat_app_design_example/screens/chats.dart';
 import 'package:flutter_examples/travel_app_desgin_example/screens/landing_screen.dart';
 
+import 'booking_app_desgin_example/screens/search_screen.dart';
+
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -29,11 +31,16 @@ class Home extends StatelessWidget {
               },
             ),
             RaisedButton(
-              child: Text('3 UI'),
-              onPressed: () {},
+              child: Text('BookingApp UI'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SearchScreen()),
+                );
+              },
             ),
             RaisedButton(
-              child: Text('4 UI'),
+              child: Text('NetflexApp UI'),
               onPressed: () {},
             ),
           ],
