@@ -3,6 +3,7 @@ import 'package:flutter_examples/chat_app_design_example/screens/chats.dart';
 import 'package:flutter_examples/travel_app_desgin_example/screens/landing_screen.dart';
 
 import 'booking_app_desgin_example/screens/search_screen.dart';
+import 'netflex_app_desgin_example/screens/netflex_home.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -41,7 +42,12 @@ class Home extends StatelessWidget {
             ),
             RaisedButton(
               child: Text('NetflexApp UI'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NetFlexApp()),
+                );
+              },
             ),
           ],
         ),
