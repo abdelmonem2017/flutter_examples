@@ -3,7 +3,9 @@ import 'package:flutter_examples/chat_app_design_example/screens/chats.dart';
 import 'package:flutter_examples/travel_app_desgin_example/screens/landing_screen.dart';
 
 import 'booking_app_desgin_example/screens/search_screen.dart';
+import 'dialogs/dialogs_screen.dart';
 import 'netflex_app_desgin_example/screens/netflex_home.dart';
+import 'provider_example/provider_screen.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -46,6 +48,24 @@ class Home extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => NetFlexApp()),
+                );
+              },
+            ),
+            RaisedButton(
+              child: Text('Dialogs Example UI'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Dialogs()),
+                );
+              },
+            ),
+            RaisedButton(
+              child: Text('Provider Example'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Provider()),
                 );
               },
             ),

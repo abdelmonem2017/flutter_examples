@@ -26,6 +26,10 @@ dependencies:
   
 # font Awesome for TravelApp UI
   font_awesome_flutter: ^8.5.0
+# provider example packages  
+  fl_chart: ^0.4.2
+  provider: ^3.1.0+1
+
 
 dev_dependencies:
   flutter_test:
